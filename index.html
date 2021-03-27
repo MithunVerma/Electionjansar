@@ -821,8 +821,9 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
  window.jqs = jqs;
  var name = decodeURI(jqs("bl"));
  if (typeof jqs("bl") === "undefined") {
- name = "";
+ name = "पंचायत को नया विकास दें";
  }
+ name="पंचायत को नया विकास दें";
  var checkName = function() {
  if (name.length !== 0) {
  name = name.replace(/-/g, " ");
@@ -838,14 +839,14 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
  checkName();
 
  var createGreeting=function(){
- sname= document.querySelector("#nameTextBox").value+"";
+ sname= "पंचायत को नया विकास दें";document.querySelector("#nameTextBox").value+"";
  sname=sname.replace(/@/g,"-")
  sname=sname.replace(/%40/g,"-")
  sname=sname.replace(/\./g,"-")
  if(sname.trim()!=""){
  document.querySelector("#formBox").style.display = "none";
  document.querySelector(".footerbtn").style.display = "block";
- document.querySelector("#wb-show-name").innerHTML = "पंचायत को नया विकास दें";
+ document.querySelector("#wb-show-name").innerHTML = sname;
  document.querySelector("#wb-show-wishing").innerHTML = "";
  document.querySelector("#wb-fromMessage").innerHTML= "";
  window.scrollTo(0,0);
