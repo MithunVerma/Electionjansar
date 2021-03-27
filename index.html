@@ -839,7 +839,7 @@ $(document).ready(function() { $curtainopen = false; $(".rope").click(function()
  checkName();
 
  var createGreeting=function(){
- sname= document.querySelector("#nameTextBox");
+ sname= document.querySelector("#nameTextBox").value;
  sname=sname.replace(/@/g,"-")
  sname=sname.replace(/%40/g,"-")
  sname=sname.replace(/\./g,"-")
